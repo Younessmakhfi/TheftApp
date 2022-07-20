@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PinActivity"
+    android:background="#3291F4">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_container_facebook"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center"/>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/banner_container_facebook"
+        android:id="@+id/password_icon"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/password_icon"
+        />
+<LinearLayout
+
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENTER YOUR PIN CODE"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textfield_bg"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:inputType="number"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter 4 digits pin code"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@drawable/switch_bg"
+        android:backgroundTint="#250B49"
+        android:layout_width="154.84dp"
+        android:layout_height="120dp"
+        android:orientation="vertical">
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PIN ON/OFF"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_margin="5dp"
+            android:id="@+id/pinSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            app:theme="@style/BrandedSwitch.control"/>
+    </LinearLayout>
+</LinearLayout>
+    <ImageView
+android:layout_centerHorizontal="true"
+        android:layout_above="@id/banner_container_admob"
+        android:layout_marginBottom="30dp"
+        android:layout_width="246.35dp"
+        android:layout_height="60dp"
+        android:src="@drawable/save_button"
+        android:onClick="savePassword"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner_container_admob"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"/>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="HOME_FUNCTION_MARGINE">10dp</dimen>
+    <dimen name="home_icons_higher">180dp</dimen>
+</resources>
