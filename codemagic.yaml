@@ -1,5 +1,7 @@
 workflows:
-  hello-world:
-scripts:
-  - name: Build for iOS         # Name of the section
-    script: flutter build ios 
+  build-app-workflow:
+    scripts:
+      - name: Build Android APK
+        script: ./gradlew assembleRelease
+    artifacts:
+      - app/build/outputs/**/**/*.apk
