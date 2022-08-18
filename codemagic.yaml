@@ -1,3 +1,5 @@
+workflows:
+  hello-world:
 scripts:
   - name: Build for iOS         # Name of the section
     script: flutter build ios 
