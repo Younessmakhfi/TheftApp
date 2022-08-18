@@ -2,7 +2,7 @@ workflows:
   my-workflow:
     scripts:
       - name: Build Android APK
-        working_directory: android
+        working_directory: ./
         script: ./gradlew assembleRelease
     artifacts:
       - app/build/outputs/**/**/*.apk
