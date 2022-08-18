@@ -1,8 +1,3 @@
-workflows:
-  my-workflow:
-    scripts:
-      - name: Build Android APK
-        working_directory: ./
-        script: ./gradlew assembleRelease
-    artifacts:
-      - app/build/outputs/**/**/*.apk
+scripts:
+  - name: Build for iOS         # Name of the section
+    script: flutter build ios 
